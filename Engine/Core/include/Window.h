@@ -18,6 +18,13 @@ public:
 
 	SDL_Renderer* GetRenderer();
 	SDL_Window* GetWindow();
+	void destroy()
+	{
+		SDL_DestroyRenderer(renderer);
+		SDL_DestroyWindow(window);
+		SDL_Quit();
+	}
+
 
 private:
 	SDL_Renderer* renderer;

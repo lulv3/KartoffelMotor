@@ -2,16 +2,18 @@
 #define PLAYER_H
 
 #include "Sprite.h"
-#include "InputManager.h"
+#include "Input.h"
+#include <iostream>
 
 class Player
 {
 public:
-	Player();
+	Player(SDL_Renderer* renderer);
 	~Player();
 
 	void update();
 	void handleInput();
+	void handleEvents();
 	void render(SDL_Renderer* renderer);
 	void init(SDL_Renderer* renderer);
 

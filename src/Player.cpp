@@ -1,27 +1,58 @@
 #include "Player.h"
 
-Player::Player() : m_speed(180.0f), m_x(100), m_y(100), m_height(16), m_width(16), m_sprite(m_width, m_height, m_x, m_y) {}
+Player::Player(SDL_Renderer* renderer) : m_speed(0.1f), m_x(100), m_y(100), m_height(16), m_width(16), m_sprite(renderer, "assets/img/Star_Red.png", 32)
+{
+
+}
 Player::~Player() {}
 
 void Player::init(SDL_Renderer* renderer)
 {
-	m_sprite.loadImage(renderer, "assets/img/Star_Red.png");
-	std::cerr << "Player PosX: " << m_sprite.getPosition().x << ", PosY: " << m_sprite.getPosition().y << std::endl;
+	std::cerr << "Player PosX: " << m_sprite.GetX() << ", PosY: " << m_sprite.GetY() << std::endl;
 }
+
 void Player::handleInput()
 {
-	if (InputManager::isKeyDown(SDLK_a)) {
+    if (Input::IsKeyDown(SDLK_d))
+    {
+        m_x += m_speed;
+        m_sprite.SetPosition(m_x, m_y);
+    }
+	if (Input::IsKeyDown(SDLK_a))
+	{
 		m_x -= m_speed;
+        m_sprite.SetPosition(m_x, m_y);
 	}
-	if (InputManager::isKeyDown(SDLK_d)) {
-		m_x += m_speed;
-	}
+}
+void Player::handleEvents()
+{
+    /*
+	switch (event.type) {
+    case SDL_KEYDOWN:
+        switch (event.key.keysym.sym) {
+        case SDLK_LEFT:
+            m_x -= m_speed;
+            break;
+        case SDLK_RIGHT:
+            m_x += m_speed;
+            break;
+        case SDLK_a:
+            m_x -= m_speed;
+            break;
+        case SDLK_d:
+            m_x += m_speed;
+            break;
+        default:
+            break;
+        }
+}
+	*/
 }
 void Player::update()
 {
-	std::cerr << "Player PosX: " << m_sprite.getPosition().x << ", PosY: " << m_sprite.getPosition().y << std::endl;
+	
 }
 void Player::render(SDL_Renderer* renderer)
 {
-	m_sprite.render(renderer, m_x, m_y);
+	m_sprite.Render();
 }

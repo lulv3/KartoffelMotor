@@ -24,17 +24,14 @@ include_directories(
 # Quelldateien festlegen
 file(GLOB SOURCES "src/*.cpp")
 file(GLOB ENGINE_SOURCES "Engine/src/*.cpp")
-file(GLOB ENGINE_SOURCES "Engine/Core/src/*.cpp")
+file(GLOB ENGINE_CORE_SOURCES "Engine/Core/src/*.cpp")
 file(GLOB IMGUI_SOURCES "third_party/imgui/*.cpp")
-
-# Assets kopieren
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 # Füge die ImGuiConsole.cpp-Datei zur Liste der Quelldateien hinzu
 list(APPEND ENGINE_SOURCES "Engine/src/Sprite.cpp")
 
 # Ausführbare Datei erstellen
-add_executable(${PROJECT_NAME} ${SOURCES} ${ENGINE_SOURCES} ${IMGUI_SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES} ${ENGINE_SOURCES} ${ENGINE_CORE_SOURCES} ${IMGUI_SOURCES})
 
 # Setze das Subsystem auf Windows, um die Konsole zu verstecken
 #if(WIN32)

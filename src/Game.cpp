@@ -1,6 +1,6 @@
 #include "Game.h"
 
-Game::Game(const char* title, int width, int height) : window(title, width, height) {}
+Game::Game(const char* title, int width, int height) : window(title, width, height), player(window.GetRenderer()) {}
 Game::~Game() {}
 
 void Game::run()
@@ -16,8 +16,10 @@ void Game::run()
 
 void Game::handleEvents() 
 {
+	Input::Update();
+	
 	window.handleEvents();
-	InputManager::update();
+	player.handleEvents();
 }
 
 void Game::handleInput()

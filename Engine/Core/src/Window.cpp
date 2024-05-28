@@ -19,17 +19,18 @@ Window::Window(const char* title, int width, int height)
 	if (!renderer) {
 		std::cerr << "Failed to create renderer: " << SDL_GetError() << std::endl;
 		running = false;
+		return;
 	}
+
 }
 
 Window::~Window() {
-	SDL_DestroyRenderer(renderer);
-	SDL_DestroyWindow(window);
-	SDL_Quit();
+	destroy();
 }
 
 void Window::handleEvents()
 {
+	// ERROR: Cannot quit the game window.
 	SDL_Event event;
 	while (SDL_PollEvent(&event)) {
 		if (event.type == SDL_QUIT) {
