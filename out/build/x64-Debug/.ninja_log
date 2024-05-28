@@ -1,0 +1,27 @@
+# ninja log v5
+44	627	7386292907508272	CMakeFiles/SDL2Game.dir/third_party/imgui/imgui_draw.cpp.obj	afd7a0b88284a72f
+11	798	7386292909258553	CMakeFiles/SDL2Game.dir/src/Player.cpp.obj	e0664d2570795725
+29	834	7386292909623585	CMakeFiles/SDL2Game.dir/Engine/src/Sprite.cpp.obj	2e9f03f4ca94a1a
+58	633	7386292907608361	CMakeFiles/SDL2Game.dir/third_party/imgui/imgui_tables.cpp.obj	2509b6d2b1f3677d
+39	645	7386292907695026	CMakeFiles/SDL2Game.dir/third_party/imgui/imgui_demo.cpp.obj	aee199130c17d442
+53	661	7386292907874039	CMakeFiles/SDL2Game.dir/third_party/imgui/imgui_impl_sdlrenderer2.cpp.obj	43083d3608ca9e5b
+63	775	7386292909005602	CMakeFiles/SDL2Game.dir/third_party/imgui/imgui_widgets.cpp.obj	929fa9a49d1b1010
+20	858	7386292909852114	CMakeFiles/SDL2Game.dir/Engine/Core/src/EngineGUI.cpp.obj	1d2b93e39a9fd6ef
+49	862	7386292909902249	CMakeFiles/SDL2Game.dir/third_party/imgui/imgui_impl_sdl2.cpp.obj	58e9022ffef2303a
+25	949	7386292910777752	CMakeFiles/SDL2Game.dir/Engine/Core/src/Window.cpp.obj	e1c11cb7789fbf52
+5	974	7386292911031226	CMakeFiles/SDL2Game.dir/src/Game.cpp.obj	468156fe21648bf9
+22	513	7386295659721762	CMakeFiles/SDL2Game.dir/src/main.cpp.obj	9ba6f86eff1f4729
+34	1130	7386292912579556	CMakeFiles/SDL2Game.dir/third_party/imgui/imgui.cpp.obj	da7d7cac3f297932
+506	853	7386295212465142	SDL2Game.exe	849a7cf2325b3423
+18	519	7386295839700985	CMakeFiles/SDL2Game.dir/src/main.cpp.obj	9ba6f86eff1f4729
+520	701	7386295841057049	SDL2Game.exe	33edd2f4d4e27ffc
+37	829	7386305033088700	CMakeFiles/SDL2Game.dir/Engine/src/Sprite.cpp.obj	2e9f03f4ca94a1a
+32	852	7386305033313381	CMakeFiles/SDL2Game.dir/Engine/Core/src/EngineGUI.cpp.obj	1d2b93e39a9fd6ef
+18	867	7386305033456103	CMakeFiles/SDL2Game.dir/src/Game.cpp.obj	468156fe21648bf9
+28	875	7386305033561417	CMakeFiles/SDL2Game.dir/src/main.cpp.obj	9ba6f86eff1f4729
+22	587	7386305207684754	CMakeFiles/SDL2Game.dir/src/Player.cpp.obj	e0664d2570795725
+17	589	7386305207711112	CMakeFiles/SDL2Game.dir/src/Game.cpp.obj	468156fe21648bf9
+27	590	7386305207711112	CMakeFiles/SDL2Game.dir/src/main.cpp.obj	9ba6f86eff1f4729
+28	545	7386306465674162	CMakeFiles/SDL2Game.dir/src/main.cpp.obj	9ba6f86eff1f4729
+23	556	7386306465786304	CMakeFiles/SDL2Game.dir/src/Player.cpp.obj	e0664d2570795725
+18	563	7386306465851366	CMakeFiles/SDL2Game.dir/src/Game.cpp.obj	468156fe21648bf9
