@@ -13,9 +13,12 @@ public:
 
 	void update();
 	void handleInput();
-	void handleEvents();
+	void handleEvents(SDL_Event* event);
 	void render(SDL_Renderer* renderer);
-	void init(SDL_Renderer* renderer);
+	void init();
+
+	int getX() { return m_x; }
+	int getY() { return m_y; }
 
 private:
 	Sprite m_sprite;

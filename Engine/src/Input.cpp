@@ -1,24 +1,22 @@
 #include "Input.h"
 
-std::unordered_map<SDL_Keycode, bool> Input::m_keyStates;
+std::unordered_map<SDL_Keycode, bool> Input::keyMap;
+float Input::deltaTime = 0.0f;
 
-void Input::Update() {
-    SDL_Event event;
-    while (SDL_PollEvent(&event)) {
-        if (event.type == SDL_KEYDOWN) {
-            m_keyStates[event.key.keysym.sym] = true;
-        }
-        else if (event.type == SDL_KEYUP) {
-            m_keyStates[event.key.keysym.sym] = false;
-        }
+void Input::Update(const SDL_Event& event) {
+    if (event.type == SDL_KEYDOWN) {
+        keyMap[event.key.keysym.sym] = true;
     }
 }
 
 bool Input::IsKeyDown(SDL_Keycode key) {
-    auto it = m_keyStates.find(key);
-    return (it != m_keyStates.end()) ? it->second : false;
+    return keyMap[key];
 }
 
-bool Input::IsKeyUp(SDL_Keycode key) {
-    return !IsKeyDown(key);
+void Input::SetDeltaTime(float dt) {
+    deltaTime = dt;
+}
+
+float Input::GetDeltaTime() {
+    return deltaTime;
 }

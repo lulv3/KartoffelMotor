@@ -28,16 +28,13 @@ Window::~Window() {
 	destroy();
 }
 
-void Window::handleEvents()
+void Window::handleEvents(const SDL_Event* event)
 {
-	// ERROR: Cannot quit the game window.
-	SDL_Event event;
-	while (SDL_PollEvent(&event)) {
-		if (event.type == SDL_QUIT) {
-			running = false;
-		}
+	if (event->type == SDL_QUIT) {
+		running = false;
 	}
 }
+
 
 void Window::clear()
 {

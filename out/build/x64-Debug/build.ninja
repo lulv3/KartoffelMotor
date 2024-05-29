@@ -73,6 +73,14 @@ build CMakeFiles\SDL2Game.dir\src\main.cpp.obj: CXX_COMPILER__SDL2Game_unscanned
   TARGET_COMPILE_PDB = CMakeFiles\SDL2Game.dir\
   TARGET_PDB = SDL2Game.pdb
 
+build CMakeFiles\SDL2Game.dir\Engine\src\Camera.cpp.obj: CXX_COMPILER__SDL2Game_unscanned_Debug C$:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\src\Camera.cpp || cmake_object_order_depends_target_SDL2Game
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -IC:\Users\colli\Documents\GitHub\KartoffelMotor\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\Core\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\imgui
+  OBJECT_DIR = CMakeFiles\SDL2Game.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDL2Game.dir\Engine\src
+  TARGET_COMPILE_PDB = CMakeFiles\SDL2Game.dir\
+  TARGET_PDB = SDL2Game.pdb
+
 build CMakeFiles\SDL2Game.dir\Engine\src\Input.cpp.obj: CXX_COMPILER__SDL2Game_unscanned_Debug C$:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\src\Input.cpp || cmake_object_order_depends_target_SDL2Game
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -IC:\Users\colli\Documents\GitHub\KartoffelMotor\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\Core\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\imgui
@@ -82,6 +90,14 @@ build CMakeFiles\SDL2Game.dir\Engine\src\Input.cpp.obj: CXX_COMPILER__SDL2Game_u
   TARGET_PDB = SDL2Game.pdb
 
 build CMakeFiles\SDL2Game.dir\Engine\src\Sprite.cpp.obj: CXX_COMPILER__SDL2Game_unscanned_Debug C$:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\src\Sprite.cpp || cmake_object_order_depends_target_SDL2Game
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -IC:\Users\colli\Documents\GitHub\KartoffelMotor\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\Core\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\imgui
+  OBJECT_DIR = CMakeFiles\SDL2Game.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDL2Game.dir\Engine\src
+  TARGET_COMPILE_PDB = CMakeFiles\SDL2Game.dir\
+  TARGET_PDB = SDL2Game.pdb
+
+build CMakeFiles\SDL2Game.dir\Engine\src\Timer.cpp.obj: CXX_COMPILER__SDL2Game_unscanned_Debug C$:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\src\Timer.cpp || cmake_object_order_depends_target_SDL2Game
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -IC:\Users\colli\Documents\GitHub\KartoffelMotor\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\Engine\Core\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\include -IC:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\imgui
   OBJECT_DIR = CMakeFiles\SDL2Game.dir
@@ -161,7 +177,7 @@ build CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_widgets.cpp.obj: CXX_COMPI
 #############################################
 # Link the executable SDL2Game.exe
 
-build SDL2Game.exe: CXX_EXECUTABLE_LINKER__SDL2Game_Debug CMakeFiles\SDL2Game.dir\src\Game.cpp.obj CMakeFiles\SDL2Game.dir\src\Player.cpp.obj CMakeFiles\SDL2Game.dir\src\main.cpp.obj CMakeFiles\SDL2Game.dir\Engine\src\Input.cpp.obj CMakeFiles\SDL2Game.dir\Engine\src\Sprite.cpp.obj CMakeFiles\SDL2Game.dir\Engine\Core\src\Window.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_demo.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_draw.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_impl_sdl2.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_impl_sdlrenderer2.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_tables.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_widgets.cpp.obj | C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2main.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_mixer.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_ttf.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_image.lib
+build SDL2Game.exe: CXX_EXECUTABLE_LINKER__SDL2Game_Debug CMakeFiles\SDL2Game.dir\src\Game.cpp.obj CMakeFiles\SDL2Game.dir\src\Player.cpp.obj CMakeFiles\SDL2Game.dir\src\main.cpp.obj CMakeFiles\SDL2Game.dir\Engine\src\Camera.cpp.obj CMakeFiles\SDL2Game.dir\Engine\src\Input.cpp.obj CMakeFiles\SDL2Game.dir\Engine\src\Sprite.cpp.obj CMakeFiles\SDL2Game.dir\Engine\src\Timer.cpp.obj CMakeFiles\SDL2Game.dir\Engine\Core\src\Window.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_demo.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_draw.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_impl_sdl2.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_impl_sdlrenderer2.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_tables.cpp.obj CMakeFiles\SDL2Game.dir\third_party\imgui\imgui_widgets.cpp.obj | C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2main.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_mixer.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_ttf.lib C$:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_image.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2.lib  C:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2main.lib  C:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_mixer.lib  C:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_ttf.lib  C:\Users\colli\Documents\GitHub\KartoffelMotor\third_party\SDL2-2.30.1\lib\x64\SDL2_image.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

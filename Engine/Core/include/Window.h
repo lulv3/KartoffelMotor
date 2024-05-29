@@ -10,7 +10,7 @@ public:
 	Window(const char* title, int width, int height);
 	~Window();
 
-	void handleEvents();
+	void handleEvents(const SDL_Event* event);
 	void clear();
 	void display();
 
@@ -18,6 +18,11 @@ public:
 
 	SDL_Renderer* GetRenderer();
 	SDL_Window* GetWindow();
+	void setRunning(bool value)
+	{
+		running = value;
+	}
+
 	void destroy()
 	{
 		SDL_DestroyRenderer(renderer);

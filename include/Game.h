@@ -4,6 +4,9 @@
 #include "Window.h"
 #include "Player.h"
 #include "Input.h"
+#include "Camera.h"
+#include "Timer.h"
+#include "gui_tools.h"
 
 class Game
 {
@@ -16,7 +19,8 @@ public:
 private:
 	Window window;
 	Player player;
-
+	Camera camera;
+	Timer timer;
 
 	void update();
 	void render();
